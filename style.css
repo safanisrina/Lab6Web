@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #202938;
+    background: #f3f6fb;
+}
+
+.container {
+    width: min(920px, 92%);
+    margin: auto;
+}
+
+header {
+    padding: 24px 0 10px;
+}
+
+h1 {
+    color: #173f75;
+}
+
+.panel {
+    background: white;
+    border: 1px solid #dce4ef;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 16px 0;
+    box-shadow: 0 3px 10px #1428460d;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px;
+    border: 1px solid #aebbd0;
+    border-radius: 6px;
+    font: inherit;
+    background: white;
+}
+
+button {
+    padding: 10px 14px;
+    margin: 5px 5px 5px 0;
+    border: 0;
+    border-radius: 6px;
+    background: #245da8;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #17457f;
+}
+
+button.secondary {
+    background: #64748b;
+}
+
+.inline {
+    display: flex;
+    gap: 8px;
+    align-items: start;
+}
+
+.inline input {
+    flex: 1;
+}
+
+.highlight {
+    color: #173f75;
+    background: #e6f1ff;
+    border-left: 4px solid #3478c8;
+    padding: 12px;
+}
+
+.teks-besar {
+    font-size: 1.4rem;
+}
+
+.selesai span {
+    text-decoration: line-through;
+    color: #687386;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.sembunyi {
+    display: none;
+}
+
+#pesanForm,
+#pesanWorkshop,
+#pesanTugas {
+    font-weight: 600;
+}
+
+footer {
+    padding: 12px 0 28px;
+    color: #5a6575;
+}
+
+/* Tampilan untuk layar ponsel */
+@media (max-width: 600px) {
+    .panel {
+        padding: 15px;
+    }
+
+    .inline {
+        display: block;
+    }
+
+    .inline button {
+        width: 100%;
+        margin-left: 0;
+    }
+}
